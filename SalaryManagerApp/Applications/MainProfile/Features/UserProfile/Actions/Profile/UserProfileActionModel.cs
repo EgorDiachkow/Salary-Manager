@@ -5,17 +5,11 @@ namespace SalaryManagerApp.Applications.MainProfile.Features.UserProfile.Actions
         public UserProfileActionModel(
             int userId,
             string userEmail,
-            string userName,
-            long userBalance,
-            long totalIncome,
-            long totalExpend)
+            string userName)
         {
             this.UserId = userId;
             this.UserEmail = userEmail;
             this.UserName = userName;
-            this.UserBalance = userBalance;
-            this.TotalIncome = totalIncome;
-            this.TotalExpend = totalExpend;
         }
 
         public int UserId { get; }
@@ -23,11 +17,5 @@ namespace SalaryManagerApp.Applications.MainProfile.Features.UserProfile.Actions
         public string UserEmail { get; }
 
         public string UserName { get; }
-
-        public long UserBalance { get; }
-
-        public long TotalIncome { get; }
-
-        public long TotalExpend { get; }
     }
 }

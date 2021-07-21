@@ -6,9 +6,9 @@ namespace SalaryManagerApp.Applications.MainProfile.Features
     using SalaryManagerApp.Applications.MainProfile.Features.UserProfile.Infrastructure;
 
     [ApiController]
-    [Route(template: "[controller]")]
+    [Route(template: "[controller]/{action}")]
     public class UserProfileController
-        : Controller
+        : ControllerBase
     {
         private readonly ILogger<UserProfileController> _logger;
 
@@ -19,6 +19,18 @@ namespace SalaryManagerApp.Applications.MainProfile.Features
 
         [HttpGet]
         public UserProfileActionModel Get()
+        {
+            var getData = new UserProfileActionModelQueryHandler();
+
+            var data = getData
+                .Handle(
+                    query: new UserProfileActionModelQuery(
+                        userId: 1));
+
+            return data;
+        }
+        [HttpGet]
+        public UserProfileActionModel test()
         {
             var getData = new UserProfileActionModelQueryHandler();
 

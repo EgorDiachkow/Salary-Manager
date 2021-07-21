@@ -21,8 +21,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Applications\MainProfile\Action" />
+      <Folder Include="Applications\Budget\Features\UserBudgetStatistics\Infrastructure" />
+      <Folder Include="Applications\Budget\Features\UserTransactions" />
       <Folder Include="Applications\MainProfile\Features\UserProfile\Model" />
+      <Folder Include="ClientApp\src\components" />
     </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
