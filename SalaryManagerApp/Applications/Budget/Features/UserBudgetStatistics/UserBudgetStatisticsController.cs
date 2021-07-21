@@ -4,11 +4,12 @@ namespace SalaryManagerApp.Applications.Budget.Features.UserBudgetStatistics
     using Microsoft.Extensions.Logging;
     using SalaryManagerApp.Applications.Budget.Features.UserBudgetStatistics.Actions;
     using SalaryManagerApp.Applications.Budget.Features.UserBudgetStatistics.Adapter;
+    using SalaryManagerApp.Applications.UserProfile;
 
     [ApiController]
     [Route(template: "[controller]")]
     public class UserBudgetStatisticsController
-        : ControllerBase
+        : SalaryBaseController
     {
         private readonly ILogger<UserBudgetStatisticsController> _logger;
 
@@ -23,7 +24,8 @@ namespace SalaryManagerApp.Applications.Budget.Features.UserBudgetStatistics
         {
             var data = new StatisticsActionModelQueryHandler()
                 .Handle(
-                    query: new StatisticsActionModelQuery());
+                    query: new StatisticsActionModelQuery(
+                        userProfile: this.UserProfile));
             return data;
         }
     }

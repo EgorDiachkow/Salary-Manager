@@ -1,9 +1,9 @@
-namespace SalaryManagerApp.Applications.MainProfile.Features.UserProfile.Actions.Profile
+namespace SalaryManagerApp.Applications.UserProfile.Actions
 {
     public class UserProfileActionModelQuery
     {
         public UserProfileActionModelQuery(
-            int userId)
+            string userId)
         {
             this.UserId = userId;
         }
@@ -14,6 +14,6 @@ namespace SalaryManagerApp.Applications.MainProfile.Features.UserProfile.Actions
                 UserProfileActionModelQuery query);
         }
 
-        public int UserId { get; }
+        public string UserId { get; }
     }
 }

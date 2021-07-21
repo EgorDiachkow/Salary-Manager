@@ -11,6 +11,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.5" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.8" />
     </ItemGroup>
 
     <ItemGroup>
@@ -23,7 +24,6 @@
     <ItemGroup>
       <Folder Include="Applications\Budget\Features\UserBudgetStatistics\Infrastructure" />
       <Folder Include="Applications\Budget\Features\UserTransactions" />
-      <Folder Include="Applications\MainProfile\Features\UserProfile\Model" />
       <Folder Include="ClientApp\src\components" />
     </ItemGroup>
 

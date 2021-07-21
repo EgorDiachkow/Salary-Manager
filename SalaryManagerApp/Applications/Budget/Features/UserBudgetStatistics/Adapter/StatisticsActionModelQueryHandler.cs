@@ -20,12 +20,13 @@ namespace SalaryManagerApp.Applications.Budget.Features.UserBudgetStatistics.Ada
 
             listCategory.Add(
                 item: categoryItem);
+
             return new StatisticsActionModel(
                 categoryListTransactions: listCategory,
-                userBalance: 10,
-                totalExpend: 100,
-                totalExpendLimit: 200,
-                totalIncome: 1000);
+                userBalance: query.UserProfile.UserBalance,
+                totalExpend: query.UserProfile.TotalExpend,
+                totalExpendLimit: query.UserProfile.TotalExpendLimit,
+                totalIncome: query.UserProfile.TotalIncome);
         }
     }
 }
