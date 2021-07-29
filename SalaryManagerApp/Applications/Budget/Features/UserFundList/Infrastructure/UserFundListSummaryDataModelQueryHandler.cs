@@ -1,8 +1,8 @@
-namespace SalaryManagerApp.Applications.Budget.Features.UserBalance.Infrastructure
+namespace SalaryManagerApp.Applications.Budget.Features.UserFundList.Infrastructure
 {
     using System.Collections.Generic;
-    using SalaryManagerApp.Applications.Budget.Features.UserBalance.Actions.UserFundList;
-    using SalaryManagerApp.Applications.Budget.Features.UserBalance.Adapters.InfrastructureContract;
+    using SalaryManagerApp.Applications.Budget.Features.UserFundList.Actions.UserFundList;
+    using SalaryManagerApp.Applications.Budget.Features.UserFundList.Adapters.InfrastructureContract;
 
     public class UserFundListSummaryDataModelQueryHandler
         : UserFundListSummaryDataModelQuery.IHandler

@@ -2,9 +2,6 @@ namespace SalaryManagerApp.Applications.Budget.Features.UserBalance
 {
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
-    using SalaryManagerApp.Applications.Budget.Features.UserBalance.Actions.UserFundList;
-    using SalaryManagerApp.Applications.Budget.Features.UserBalance.Adapters;
-    using SalaryManagerApp.Applications.Budget.Features.UserBalance.Infrastructure;
     using SalaryManagerApp.Applications.UserProfile;
 
     [ApiController]
@@ -21,12 +18,27 @@ namespace SalaryManagerApp.Applications.Budget.Features.UserBalance
         }
 
         [HttpGet]
-        public UserFundListActionModel GetUserFundList()
+        public void AddAssetCategory()
         {
-            return new UserFundListActionModelQueryHandler(
-                    userFundListSummaryDataModelQueryHandler: new UserFundListSummaryDataModelQueryHandler())
-                .Handle(
-                    query: new UserFundListActionModelQuery());
+
+        }
+
+        [HttpGet]
+        public void AddCreditcardCategory()
+        {
+
+        }
+
+        [HttpGet]
+        public void AddObligationCategory()
+        {
+
+        }
+
+        [HttpGet]
+        public void AddSavingCategory()
+        {
+
         }
     }
 }

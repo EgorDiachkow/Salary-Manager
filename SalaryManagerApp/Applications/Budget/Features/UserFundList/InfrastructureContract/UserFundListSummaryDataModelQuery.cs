@@ -1,8 +1,7 @@
-namespace SalaryManagerApp.Applications.Budget.Features.UserBalance.Adapters.InfrastructureContract
+namespace SalaryManagerApp.Applications.Budget.Features.UserFundList.InfrastructureContract
 {
     using System.Collections.Generic;
-    using Microsoft.EntityFrameworkCore.Migrations.Operations.Builders;
-    using SalaryManagerApp.Applications.Budget.Features.UserBalance.Actions.UserFundList;
+    using SalaryManagerApp.Applications.Budget.Features.UserFundList.Actions.UserFundList;
 
     public class UserFundListSummaryDataModelQuery
     {

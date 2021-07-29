@@ -1,7 +1,7 @@
-namespace SalaryManagerApp.Applications.Budget.Features.UserBalance.Adapters
+namespace SalaryManagerApp.Applications.Budget.Features.UserFundList.Adapters
 {
-    using SalaryManagerApp.Applications.Budget.Features.UserBalance.Actions.UserFundList;
-    using SalaryManagerApp.Applications.Budget.Features.UserBalance.Adapters.InfrastructureContract;
+    using SalaryManagerApp.Applications.Budget.Features.UserFundList.Actions.UserFundList;
+    using SalaryManagerApp.Applications.Budget.Features.UserFundList.Adapters.InfrastructureContract;
 
     public class UserFundListActionModelQueryHandler
         : UserFundListActionModelQuery.IHandler

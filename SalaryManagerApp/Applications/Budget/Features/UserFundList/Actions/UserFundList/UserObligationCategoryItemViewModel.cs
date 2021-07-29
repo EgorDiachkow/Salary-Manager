@@ -1,4 +1,4 @@
-namespace SalaryManagerApp.Applications.Budget.Features.UserBalance.Actions.UserFundList
+namespace SalaryManagerApp.Applications.Budget.Features.UserFundList.Actions.UserFundList
 {
     public class UserObligationCategoryItemViewModel
     {

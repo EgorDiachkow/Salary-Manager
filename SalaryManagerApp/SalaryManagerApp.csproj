@@ -25,7 +25,11 @@
       <Folder Include="Applications\Budget\Features\UserBalance\Actions\Assets" />
       <Folder Include="Applications\Budget\Features\UserBalance\Actions\CreditСard" />
       <Folder Include="Applications\Budget\Features\UserBalance\Actions\Obligations" />
+      <Folder Include="Applications\Budget\Features\UserBalance\Actions\Saving" />
+      <Folder Include="Applications\Budget\Features\UserBalance\Adapters\InfrastructureContract" />
+      <Folder Include="Applications\Budget\Features\UserBalance\Infrastructure" />
       <Folder Include="Applications\Budget\Features\UserBudgetStatistics\Infrastructure" />
+      <Folder Include="Applications\Budget\Features\UserFundList\Actions" />
       <Folder Include="ClientApp\src\components" />
     </ItemGroup>
 
