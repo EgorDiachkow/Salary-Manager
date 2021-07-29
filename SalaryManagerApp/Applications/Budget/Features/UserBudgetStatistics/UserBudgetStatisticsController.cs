@@ -7,7 +7,7 @@ namespace SalaryManagerApp.Applications.Budget.Features.UserBudgetStatistics
     using SalaryManagerApp.Applications.UserProfile;
 
     [ApiController]
-    [Route(template: "[controller]")]
+    [Route(template: "[controller]/{action}")]
     public class UserBudgetStatisticsController
         : SalaryBaseController
     {
